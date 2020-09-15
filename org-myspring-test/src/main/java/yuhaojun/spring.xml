@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	   xmlns:cache="http://www.springframework.org/schema/cache"
+	   xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/cache http://www.springframework.org/schema/cache/spring-cache.xsd">
+
+										<!-- 手动注入方式 根据属性、名字、构造器、默认 一共有5种-->
+	<bean id="person" class="com.yuhaojun.di.person" autowire="byName">
+		<property name="student" ref=""></property>
+	</bean>
+
+	<bean id="" class="com.yuhaojun.di.student"></bean>
+</beans>
